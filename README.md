@@ -1,14 +1,14 @@
 # Tweetify – Tweet Link Generator
 
-Easily generate a direct Twitter (now X) link to share a tweet from any username and tweet ID with this simple web tool. Tweetify makes it quick to create a `https://twitter.com/{username}/status/{tweet_id}` link for sharing, bookmarking, or embedding.
+Easily generate a direct Twitter (now X) link to share a tweet from any message with this simple web tool. Tweetify lets you create a tweet intent link (`https://twitter.com/intent/tweet?text=...`) for sharing on X/Twitter instantly.
 
 ---
 
 ## 🌐 Demo
 
-You can try it out locally by opening `index.html` in your browser.
+Try it online: [https://tweetify.netlify.app/](https://tweetify.netlify.app/)
 
-_Coming soon: [Online Demo](#) – Host on GitHub Pages or Netlify!_
+Or, you can run it locally by opening `index.html` in your browser.
 
 ---
 
@@ -17,45 +17,46 @@ _Coming soon: [Online Demo](#) – Host on GitHub Pages or Netlify!_
 ```
 Tweetify/
 ├── index.html         # Main HTML structure and UI
-├── style.css          # Basic styles for layout
-├── script.js          # JavaScript for generating the tweet link
+├── styles.css         # Basic styles for layout and responsiveness
 ├── README.md          # Project documentation
-├── License.md         # License file
-└── .gitignore         # Git ignored files
+├── License.md         # License file (MIT)
+├── .gitignore         # Git ignored files
+├── img/
+│   └── screenshot-tweetify.png   # Project screenshot
 ```
 
 ---
 
 ## 🚀 Features
 
-- ✅ Enter a Twitter username and tweet ID to generate a tweet link.
-- ✅ Click to generate the link instantly.
-- ✅ Built with HTML, CSS, and JavaScript.
+- ✅ Enter your tweet message and generate an instant Tweet intent link.
+- ✅ Copy the generated link and share it anywhere.
+- ✅ Built with HTML, CSS, and JavaScript (no frameworks!).
 - ✅ Clean, responsive UI using [Pico CSS](https://picocss.com/).
-- ✅ Copy-to-clipboard button for easy sharing. _(optional, see customization)_
+- ✅ Works entirely offline – just open `index.html`.
 
 ---
 
 ## 📸 Screenshot
 
-![Tweet Link Generator Screenshot](/img/screenshot-tweetify.png) <!-- Replace with actual screenshot if available -->
+![Tweet Link Generator Screenshot](img/screenshot-tweetify.png)
 
 ---
 
 ## 🔧 Usage
 
-1. Open the `index.html` file in your browser.
-2. Enter a valid Twitter username and tweet ID.
+1. Open the [online demo](https://tweetify.netlify.app/) **or** open `index.html` locally in your browser.
+2. Enter your tweet message in the input field.
 3. Click "Generate Tweet Link".
-4. Your tweet link will appear below the button.
+4. The generated tweet intent link will appear below the button.
 
-Example output:
+**Example output:**
 
 ```
-https://twitter.com/elonmusk/status/1234567890123456
+https://twitter.com/intent/tweet?text=Hello%20from%20Tweetify!
 ```
 
-You can copy and share this link anywhere.
+Copy and share this link anywhere to pre-fill a tweet.
 
 ---
 
@@ -63,13 +64,13 @@ You can copy and share this link anywhere.
 
 - HTML5
 - Vanilla JavaScript
-- Pico CSS (CDN)
+- Pico CSS (via CDN)
 
 ---
 
 ## 📦 Installation (for Developers)
 
-Clone this repo locally:
+Clone this repo:
 
 ```bash
 git clone https://github.com/shivankushsingh09/Tweetify.git
@@ -84,17 +85,18 @@ Then open `index.html` in your browser.
 
 ## 📌 Customization
 
-Want more features?
+Want to enhance Tweetify? Here are some ideas:
 
-- **Copy-to-clipboard:** Add a button in `index.html` and update `script.js` to copy the generated link.
-- **Validation:** Enhance form validation for user input.
+- **Copy-to-clipboard:** Add a button to copy the generated link (update `index.html` and JavaScript).
+- **Validation:** Improve input validation for tweet messages.
 - **Online Hosting:** Deploy on GitHub Pages, Netlify, Vercel, etc.
+- **Advanced options:** Add support for hashtags, mentions, or media URLs.
 
-Example function for generating the tweet link in `script.js`:
-
+**Example function for generating the tweet intent link (from `index.html`):**
 ```js
-function getTweetUrl(username, tweetId) {
-  return `https://twitter.com/${username}/status/${tweetId}`;
+function getTweetUrl(message) {
+  const encodedTweet = encodeURIComponent(message);
+  return "https://twitter.com/intent/tweet?text=" + encodedTweet;
 }
 ```
 
@@ -102,7 +104,7 @@ function getTweetUrl(username, tweetId) {
 
 ## 🧾 License
 
-This project is licensed under the terms described in `License.md`.
+This project is licensed under the MIT License. See [`License.md`](License.md) for details.
 
 ---
 
@@ -110,21 +112,21 @@ This project is licensed under the terms described in `License.md`.
 
 Contributions, issues, and feature requests are welcome!
 
-1. Fork the repository
-2. Create your branch (`git checkout -b feature/something`)
-3. Commit your changes (`git commit -am 'Add something'`)
-4. Push to the branch (`git push origin feature/something`)
-5. Create a new Pull Request
+1. Fork the repository.
+2. Create your branch (`git checkout -b feature/something`).
+3. Commit your changes (`git commit -am 'Add something'`).
+4. Push to your branch (`git push origin feature/something`).
+5. Create a new Pull Request.
 
 ---
 
 ## 📬 Contact
 
-For any questions or suggestions, feel free to reach out via [GitHub Issues](https://github.com/shivankushsingh09/Tweetify/issues).
+For questions or suggestions, open an [issue](https://github.com/shivankushsingh09/Tweetify/issues).
 
 ---
 
-Enjoy using **Tweetify** – Tweet Link Generator!
+Enjoy using **Tweetify – Tweet Link Generator**!
 
 ---
 
@@ -134,3 +136,4 @@ Let me know if you want this version to include:
 - Hosting options (GitHub Pages, Netlify),
 - Advanced input validation,
 - Or anything else!
+```
