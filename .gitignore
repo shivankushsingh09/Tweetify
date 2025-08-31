@@ -1,0 +1,38 @@
+# Node modules (if you ever use Node.js tooling)
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE/editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+*.swp
+*.bak
+*.tmp
+
+# Images cache (if you process images)
+img/cache/
