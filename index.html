@@ -8,7 +8,7 @@
     <meta name="description" content="generate a custom tweet link" />
     <title>Tweetify - Tweet Link Generator</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -28,31 +28,14 @@
         <p id="app"></p>
     </main>
 
-    <!-- <footer class="container neog-footer">
+    <footer class="container neog-footer">
         <small>
             go from zero to hero at full stack development with
             <a href="https://neog.camp">neog.camp</a>
         </small>
-    </footer> -->
+    </footer>
 
-    <script>
-        function getTweetUrl(message) {
-            const encodedTweet = encodeURIComponent(message);
-            return "https://twitter.com/intent/tweet?text=" + encodedTweet;
-        }
-
-        function handleGenerateClick() {
-            const tweetMessage = inputElement.value;
-            const tweetUrl = getTweetUrl(tweetMessage);
-            appElement.innerHTML = tweetUrl;
-        }
-
-        const inputElement = document.getElementById("tweetInput");
-        const buttonElement = document.getElementById("generateBtn");
-        const appElement = document.getElementById("app");
-
-        buttonElement.addEventListener("click", handleGenerateClick);
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
