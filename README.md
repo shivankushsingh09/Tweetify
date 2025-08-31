@@ -6,7 +6,7 @@ Easily generate a direct Twitter (now X) link to share a tweet from any message 
 
 ## 🌐 Demo
 
-Try it online: [https://tweetify.netlify.app/](https://tweetify.netlify.app/)
+Try it online: [https://tweetify.netlify.app/](https://tweet-ify.netlify.app/)
 
 Or, you can run it locally by opening `index.html` in your browser.
 
@@ -45,7 +45,7 @@ Tweetify/
 
 ## 🔧 Usage
 
-1. Open the [online demo](https://tweetify.netlify.app/) **or** open `index.html` locally in your browser.
+1. Open the [online demo](https://tweet-ify.netlify.app/) **or** open `index.html` locally in your browser.
 2. Enter your tweet message in the input field.
 3. Click "Generate Tweet Link".
 4. The generated tweet intent link will appear below the button.
