@@ -16,13 +16,17 @@ Or, you can run it locally by opening `index.html` in your browser.
 
 ```
 Tweetify/
-├── index.html         # Main HTML structure and UI
-├── styles.css         # Basic styles for layout and responsiveness
-├── README.md          # Project documentation
-├── License.md         # License file (MIT)
-├── .gitignore         # Git ignored files
-├── img/
-│   └── screenshot-tweetify.png   # Project screenshot
+├── index.html                  # Main HTML structure and UI
+├── assets/
+│   ├── css/
+│   │   └── main.css            # Styles for layout and responsiveness
+│   ├── img/
+│   │   └── screenshot-tweetify.png   # Project screenshot
+│   └── js/
+│       └── main.js             # JavaScript logic for Tweetify
+├── README.md                   # Project documentation
+├── License.md                  # License file (MIT)
+├── .gitignore                  # Git ignored files
 ```
 
 ---
@@ -39,7 +43,7 @@ Tweetify/
 
 ## 📸 Screenshot
 
-![Tweet Link Generator Screenshot](img/screenshot-tweetify.png)
+![Tweet Link Generator Screenshot](assets/img/screenshot-tweetify.png)
 
 ---
 
