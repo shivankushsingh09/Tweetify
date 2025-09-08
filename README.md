@@ -6,7 +6,7 @@ Easily generate a direct Twitter (now X) link to share a tweet from any message 
 
 ## 🌐 Demo
 
-Try it online: [https://tweet-ify.netlify.app/](https://tweet-ify.netlify.app/)
+Try it online: [https://tweet-ify.netlify.app/](https://tweetify-v1.netlify.app/)
 
 Or, you can run it locally by opening `index.html` in your browser.
 
